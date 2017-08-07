@@ -32,7 +32,6 @@ train = optimizer.minimize(cost)
 
 
 
-
 with tf.Session() as sess:
 	sess.run(tf.global_variables_initializer())
 	for step in range(5001):
