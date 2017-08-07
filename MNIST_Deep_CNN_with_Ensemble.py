@@ -17,6 +17,7 @@ class Model:
 		self.name = name
 		self._build_net()
 
+
 	# 네트워크 구성하는 함수
 	def _build_net(self):
 		with tf.variable_scope(self.name):
