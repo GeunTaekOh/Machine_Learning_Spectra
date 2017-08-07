@@ -1,4 +1,3 @@
-# Lab 7 Learning rate and Evaluation
 import tensorflow as tf
 import random
 import matplotlib.pyplot as plt
@@ -25,6 +24,7 @@ X = tf.placeholder(tf.float32, [None, 784])
 Y = tf.placeholder(tf.float32, [None, 10])
 keep_prob = tf.placeholder(tf.float32)		# keep_prob는 이는 얼마나 drop out 을 할지에 대한 것임 학습을 할때는 보통 0.5~0.7을 하고 실전을 할 때는 1.0 으로 해야함
 											# 이 의미는 학습을 할때 데이터를 0.5~0.7만큼사용하지만 실제 테스팅할때는 모든 노드들을 다 사용해야하므로 1.0으로 해주어야함
+											# overfitting 문제 때문에 drop out을 함
 
 # weights & bias for nn layers
 #W1 = tf.Variable(tf.random_normal([784, 256]))
