@@ -11,6 +11,7 @@ learning_rate = 0.001
 training_epochs = 15
 batch_size = 100
 
+
 X = tf.placeholder(tf.float32, [None, 784])		# MNIST 이므로 784개의 열.
 X_img = tf.reshape(X,[-1, 28, 28, 1])	# 개수는 모르겠고 (-1), 28 * 28 의 크기의 색상은 1개.  # img : 28*28*1
 Y = tf.placeholder(tf.float32, [None, 10])
