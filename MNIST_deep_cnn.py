@@ -11,6 +11,7 @@ learning_rate = 0.001
 training_epochs = 15
 batch_size = 100
 
+
 keep_prob = tf.placeholder(tf.float32)		# drop out 을 위한 keep_prob
 
 X = tf.placeholder(tf.float32, [None, 784])		# MNIST 이므로 784개의 열.
