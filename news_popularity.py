@@ -13,6 +13,7 @@ xy_validation, xy_test = train_test_split(xy_tmp, test_size=0.5, random_state=42
 x_data=xy_train[:,0:-1]
 y_data=xy_train[:,[-1]]
 
+
 print('x_data : ',x_data)
 print('\n')
 print('y_data : ',y_data)
